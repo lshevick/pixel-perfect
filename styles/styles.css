@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Oswald&display=swap');
+
 :root {
     --primary-color: #f4f4f4;
     --secondary-color: #606060;
     --tertiary-color: #D26D4A;
+    --nav-color: #f8f8f8;
 }
 
 * {
@@ -12,6 +15,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: var(--primary-color);
+    font-family: Lato, sans-serif;
 }
 
 
@@ -20,11 +24,15 @@ body {
 nav {
     display: grid;
     width: 100%;
-    grid-template-areas: 
-    ".  .   hamburger"
-    "nav nav   nav ";
+    grid-template-areas:
+        ".  .   hamburger"
+        "nav nav   nav ";
     border-bottom: 0.5px solid #b0b0b0;
-    background-color: #FFF;
+    background-color: var(--nav-color);
+}
+
+ul {
+    list-style: none;
 }
 
 
@@ -34,16 +42,15 @@ a {
 }
 
 #menu-btn {
-    position:absolute;
+    position: absolute;
     top: -100%;
     left: -100%;
 }
 
 .main-nav {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .menu-btn {
@@ -52,7 +59,7 @@ a {
 
 .menu-icon {
     grid-area: hamburger;
-    cursor:pointer;
+    cursor: pointer;
     display: flex;
     justify-content: flex-end;
     align-items: baseline;
@@ -66,19 +73,20 @@ a {
     background: #969696;
     display: block;
     height: 2px;
-    width: 22px;
+    width: 21.5px;
     position: relative;
 }
 
 .navicon::before {
     top: 6px;
 }
-    
+
 .navicon::after {
     top: -6px;
-}   
+}
 
-.navicon::before, .navicon::after {
+.navicon::before,
+.navicon::after {
     content: '';
     background: #969696;
     display: block;
@@ -106,36 +114,113 @@ a {
     border-right: 1px solid #f4f4f4;
 }
 
-.menu-btn:checked ~ .menu-icon .navicon {
+.menu-btn:checked~.menu-icon .navicon {
     background: transparent;
 }
 
-.menu-btn:checked ~ .menu-icon .navicon::before {
+.menu-btn:checked~.menu-icon .navicon::before {
     transform: rotate(-45deg);
 }
 
-.menu-btn:checked ~ .menu-icon .navicon::after {
+.menu-btn:checked~.menu-icon .navicon::after {
     transform: rotate(45deg);
 }
 
-.menu-btn:checked ~ .menu-icon .navicon:before,
-  .menu-btn:checked ~ .menu-icon .navicon:after {
+.menu-btn:checked~.menu-icon .navicon:before,
+.menu-btn:checked~.menu-icon .navicon:after {
     top: 0;
-  }
+}
 
-  .menu-btn:checked ~ .main-nav {
-      max-height: 250px;
-  }
+.menu-btn:checked~.main-nav {
+    max-height: 250px;
+}
 
 /* ------------------ NAVIGATION END --------------------- */
 
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
 .main-card {
+    background-color: #fff;
+    width: 94vw;
+    margin: 3rem auto 0.6rem auto;
+}
+
+.card-info {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 90vw;
-    padding: 10px;
-    margin: 0 auto;
+    padding: 0.35rem 0;
+    margin: 1.45rem 0 0.7rem 0;
+}
+
+.main-card img {
+    width: 100%;
+    padding: 0;
+}
+
+.main-card-title {
+    color: var(--tertiary-color);
+    font-size: 0.75rem;
+    font-weight: bolder;
+    letter-spacing: 0.5px;
+    margin-bottom: 0.6rem;
+}
+
+.card-info > h2 {
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    font-family: Oswald, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.main-para {
+    font-size: 1rem;
+    line-height: 1.567rem;
+    letter-spacing: -0.41px;
+    padding: 0.25rem 2.5rem;
+}
+
+.read-more-btn {
+    color: var(--tertiary-color);
+    font-size: 0.75rem;
+    letter-spacing: 0.89px;
+    font-weight: bold;
+    margin: 1rem;
+    border: 1px solid var(--tertiary-color);
+    padding: 10px 17px;
+    background-color: #fff;
+}
+
+.sub-info {
+    display: flex;
+    justify-content: space-between;
+    width: 83%;
+    margin-top: 1.6rem;
+    padding: 0.2rem 0;
+    border-top: 1px solid var(--primary-color);
+}
+
+.author-info {
+    font-size: 0.8rem;
+    color: #c2c2c2;
+    letter-spacing: 0.2px;
+
+}
+
+.social-links {
+    display: flex;
+    width: 46%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.fa-brands {
+    color: #c2c2c2;
 }
