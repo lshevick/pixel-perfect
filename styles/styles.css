@@ -18,6 +18,12 @@ body {
     font-family: Lato, sans-serif;
 }
 
+button:hover {
+    background-color: var(--tertiary-color); 
+    color: white;
+    cursor: pointer;
+}
+
 
 /* --------------------- NAVIGATION START -------------------- */
 
@@ -33,6 +39,7 @@ nav {
 
 ul {
     list-style: none;
+    padding: 0;
 }
 
 
@@ -118,6 +125,11 @@ h2 {
     border-right: 1px solid #f4f4f4;
 }
 
+.nav-item a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
 .menu-btn:checked~.menu-icon .navicon {
     background: transparent;
 }
@@ -136,7 +148,32 @@ h2 {
 }
 
 .menu-btn:checked~.main-nav {
-    max-height: 250px;
+    max-height: 100vh;
+}
+
+.social-list li {
+    padding: 0.5rem;
+}
+
+.social-list i:hover {
+    color: var(--tertiary-color);
+}
+
+.nav-item {
+    padding: 0.5rem;
+}
+
+.search-input {
+    border-radius: 10px;
+    border: 1px solid var(--tertiary-color);
+}
+
+.search-button {
+    font-size: 0.7rem;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 40px;
+    background-color: var(--tertiary-color);
 }
 
 /* ------------------ NAVIGATION END --------------------- */
@@ -312,12 +349,14 @@ main {
     border: 1px solid #f4f4f4;
 }
 
-.profile-info > ul > li > a > i {
+.profile-info>ul>li>a>i {
     font-size: 0.9rem;
     justify-self: center;
 }
+
 /* ------------------PROFILE CARD END------------------- */
 
+/* ---------------POPULAR POST START--------------------- */
 .popular-post-container {
     display: grid;
     grid-auto-columns: auto;
@@ -338,7 +377,6 @@ main {
 .popular-post {
     display: flex;
     flex-direction: column;
-    /* padding: 0.3rem 1rem; */
     margin: 0;
     margin-top: 6px;
     margin-bottom: 10px;
@@ -346,14 +384,79 @@ main {
 }
 
 .popular-post h2 {
-    margin: 0.7rem 0;
-    font-size: 0.9rem;
-    letter-spacing: 0.8px;
+    margin: 0.7rem 0.2rem;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
 }
 
 .popular-post p {
-    margin-top: 0;
-    margin-bottom: 21px;
+    color: #c2c2c2;
+    margin-top: 2px;
+    margin-bottom: 19px;
     font-size: 0.8rem;
     letter-spacing: 0.5px;
 }
+
+.popular-post:last-child {
+    border-bottom: none;
+}
+
+/* ------------------POPULAR POST END------------------- */
+
+/* -----------------LATEST POST START-------------------- */
+
+.latest-post-container {
+    display: grid;
+    grid-auto-columns: auto;
+    background-color: #fff;
+    width: 94vw;
+    margin: 0 auto;
+    padding: 0 0.9rem;
+    margin-top: 0.4rem;
+}
+
+.latest-post-container h2 {
+    justify-self: center;
+    font-size: 1.25rem;
+    margin: 1rem;
+}
+
+.latest-post {
+    display: flex;
+    width: 100%;
+    height: 6rem;
+    padding: 0.5rem 0.9rem;
+    border-bottom: 1px solid #c2c2c2;
+    margin: 0 0 0.7rem 0;
+}
+
+.latest-post img {
+    width: 105px;
+    height: 76px;
+    margin: 0;
+}
+
+.latest-post-info {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0.9rem;
+    font-size: 0.8rem;
+}
+
+.latest-post-info h2 {
+    font-size: 0.8rem;
+    letter-spacing: 0.8px;
+    margin: 0 0 0.5rem 0;
+}
+
+.latest-post-info em {
+    letter-spacing: 0.5px;
+    color: #c2c2c2;
+}
+
+.latest-post:last-child {
+    border: none;
+}
+/* ---------------LATEST POST END-------------------- */
+
+/* -----------------INSTA FEED START----------------------- */
