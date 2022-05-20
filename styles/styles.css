@@ -137,6 +137,8 @@ a {
 
 /* ------------------ NAVIGATION END --------------------- */
 
+
+/* -----------------MAIN CONTENT START------------------- */
 main {
     display: flex;
     flex-direction: column;
@@ -171,7 +173,7 @@ main {
     margin-bottom: 0.6rem;
 }
 
-.card-info > h2 {
+.card-info>h2 {
     font-size: 1.3rem;
     letter-spacing: 1px;
     font-family: Oswald, sans-serif;
@@ -223,4 +225,116 @@ main {
 
 .fa-brands {
     color: #c2c2c2;
+}
+
+/* ----------------------MAIN CONTENT END------------------- */
+
+
+/* --------------------PROFILE CARD START--------------------- */
+.profile-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 94vw;
+    margin: 3rem auto 0.6rem auto;
+    background-color: #fff;
+}
+
+.cover-photo {
+    height: 26.5vh;
+}
+
+.profile-pic-circle {
+    display: inline-block;
+    align-self: center;
+    justify-self: center;
+    position: absolute;
+    top: 22%;
+    overflow: hidden;
+    border: 7px solid white;
+    border-radius: 50%;
+    height: 180px;
+    width: 180px;
+}
+
+.profile-photo {
+    width: auto;
+    height: 100%;
+    position: relative;
+    left: -25%;
+}
+
+.profile-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0.35rem 2rem;
+    margin: 3.5rem 0 0.7rem 0;
+}
+
+.profile-info h2 {
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    font-family: Oswald, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.profile-info p {
+    font-size: 0.88rem;
+    padding: 0.4rem;
+    line-height: 1.5rem;
+
+}
+
+.profile-info ul {
+    margin-top: 0.3rem;
+    padding: 0;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.profile-info li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    padding: 0.4rem;
+    border-radius: 50%;
+    border: 1px solid #f4f4f4;
+}
+
+.profile-info > ul > li > a > i {
+    font-size: 0.9rem;
+    justify-self: center;
+}
+/* ------------------PROFILE CARD END------------------- */
+
+.popular-post-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 94vw;
+    margin: 2.2rem auto;
+    padding: 0 1rem;
+    background-color: #fff;
+}
+
+.popular-post {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    border-bottom: 1px solid #c2c2c2;
+}
+
+.popular-post h2 {
+    font-size: 0.75rem;
+}
+
+.popular-post p {
+    font-size: 0.75rem
 }
