@@ -41,6 +41,10 @@ a {
     color: var(--secondary-color);
 }
 
+h2 {
+    font-family: Oswald, sans-serif;
+}
+
 #menu-btn {
     position: absolute;
     top: -100%;
@@ -241,7 +245,7 @@ main {
 }
 
 .cover-photo {
-    height: 26.5vh;
+    height: 27vh;
 }
 
 .profile-pic-circle {
@@ -270,7 +274,7 @@ main {
     justify-content: center;
     align-items: center;
     padding: 0.35rem 2rem;
-    margin: 3.5rem 0 0.7rem 0;
+    margin: 3.3rem 0 0.7rem 0;
 }
 
 .profile-info h2 {
@@ -315,26 +319,41 @@ main {
 /* ------------------PROFILE CARD END------------------- */
 
 .popular-post-container {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-auto-columns: auto;
     align-items: center;
     width: 94vw;
     margin: 2.2rem auto;
-    padding: 0 1rem;
+    padding: 1.2rem 1.7rem;
     background-color: #fff;
 }
+
+.popular-post-container h2 {
+    justify-self: center;
+    font-size: 1.15rem;
+    letter-spacing: 0.8px;
+}
+
 
 .popular-post {
     display: flex;
     flex-direction: column;
-    padding: 1rem;
+    /* padding: 0.3rem 1rem; */
+    margin: 0;
+    margin-top: 6px;
+    margin-bottom: 10px;
     border-bottom: 1px solid #c2c2c2;
 }
 
 .popular-post h2 {
-    font-size: 0.75rem;
+    margin: 0.7rem 0;
+    font-size: 0.9rem;
+    letter-spacing: 0.8px;
 }
 
 .popular-post p {
-    font-size: 0.75rem
+    margin-top: 0;
+    margin-bottom: 21px;
+    font-size: 0.8rem;
+    letter-spacing: 0.5px;
 }
