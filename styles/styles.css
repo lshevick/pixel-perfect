@@ -413,6 +413,7 @@ main {
     margin: 0 auto;
     padding: 0 0.9rem;
     margin-top: 0.4rem;
+    padding-bottom: 0.5rem;
 }
 
 .latest-post-container h2 {
@@ -460,3 +461,89 @@ main {
 /* ---------------LATEST POST END-------------------- */
 
 /* -----------------INSTA FEED START----------------------- */
+.instagram-feed-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 94vw;
+    margin: 3rem auto;
+    background-color: #fff;
+    padding-bottom: 0.6rem;
+}
+
+.instagram-feed {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0;
+    padding: 0.89rem 1.4rem;
+}
+
+.instagram-feed-container h2 {
+    margin-top: 1.5rem;
+    margin-bottom: 0;
+    font-size: 1.25rem;
+}
+
+.insta-img {
+    width: 93%;
+    justify-self: center;
+    align-self: center;
+    padding: 0.5rem 0;
+}
+/* ------------------END OF INSTA FEED------------------ */
+
+/* ---------------------START OF FOOTER-------------------- */
+
+.footer-container {
+    display: grid;
+    grid-template-areas: 
+    'img '
+    'foot';
+    width: 100vw;
+    margin: 1.5rem 0;
+}
+
+.footer-img-container {
+    grid-area: img;
+    display: flex;
+    width: 100vw;
+}
+
+.footer-img {
+    width: 25%;
+    height: 100%;
+}
+
+.footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #222;
+    height: 4rem;
+    position: relative;
+}
+
+.footer-text {
+    font-size: 0.8rem;
+    letter-spacing: 0.5px;
+    color: #969696;
+}
+
+.to-the-top {
+    font-size: 1.5rem;
+    color: white;
+    position: absolute;
+    float: right;
+    bottom: 42.9%;
+    right: 5.7%;
+    background-color: var(--tertiary-color);
+    padding: 0.25rem 0.7rem;
+    opacity: 0.125;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.to-the-top:hover {
+    opacity: 1;
+}
