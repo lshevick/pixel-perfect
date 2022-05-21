@@ -278,6 +278,7 @@ main {
     background-color: #fff;
     width: 94vw;
     margin: 3rem auto 0.6rem auto;
+    padding-bottom: 0.63rem;
 }
 
 .card-info {
@@ -356,6 +357,11 @@ main {
     color: #c2c2c2;
 }
 
+.main-card-container {
+    margin: 0;
+    padding: 0;
+}
+
 /* ----------------------MAIN CONTENT END------------------- */
 
 
@@ -365,12 +371,12 @@ main {
     display: flex;
     flex-direction: column;
     width: 94vw;
-    margin: 3rem auto 0.6rem auto;
+    margin: 2.4rem auto 0.6rem auto;
     background-color: #fff;
 }
 
 .cover-photo {
-    height: 27vh;
+    height: 24vh;
 }
 
 .profile-pic-circle {
@@ -378,7 +384,7 @@ main {
     align-self: center;
     justify-self: center;
     position: absolute;
-    top: 22%;
+    top: 23.5%;
     overflow: hidden;
     border: 7px solid white;
     border-radius: 50%;
@@ -399,7 +405,7 @@ main {
     justify-content: center;
     align-items: center;
     padding: 0.35rem 2rem;
-    margin: 3.3rem 0 0.7rem 0;
+    margin: 3.4rem 0 0.7rem 0;
 }
 
 .profile-info h2 {
@@ -471,8 +477,13 @@ main {
     border-bottom: 1px solid #c2c2c2;
 }
 
+.popular-post img {
+    padding: 0.1rem;
+    margin-bottom: 0.2rem;
+}
+
 .popular-post h2 {
-    margin: 0.7rem 0.2rem;
+    margin: 0.55rem 0.2rem;
     font-size: 0.85rem;
     letter-spacing: 1px;
 }
@@ -634,4 +645,8 @@ main {
 
 .to-the-top:hover {
     opacity: 1;
+}
+
+@media (min-width: 501px) {
+    
 }
