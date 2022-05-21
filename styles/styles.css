@@ -446,7 +446,7 @@ main {
     height: 2rem;
     padding: 0.4rem;
     border-radius: 50%;
-    border: 1px solid #f4f4f4;
+    border: 1px solid #c4c4c4;
 }
 
 .profile-info>ul>li>a>i {
@@ -661,8 +661,16 @@ main {
         grid-template-areas:
             'main prof'
             'main pop'
+            'main pop'
+            'main pop'
             'main latest'
-            'main insta';
+            'main latest'
+            'main latest'
+            'main insta'
+            'main insta'
+            'main insta'
+            'main .'
+            'main .';
         margin: 0 auto;
         padding: 3rem 5rem;
         width: 90vw;
@@ -672,12 +680,12 @@ main {
 
     .main-card-container {
         grid-area: main;
-        margin-top: 0.3rem;
     }
 
     .main-card {
         width: 52vw;
         margin: 0;
+        margin-bottom: 3.5rem;
     }
 
     .profile-card {
@@ -707,17 +715,21 @@ main {
     }
 
     .popular-post-container {
-        width: 33.33%;
+        width: 25vw;
         grid-area: pop;
     }
 
+
+
     .latest-post-container {
-        width: 33.33%;
+        width: 25vw;
         grid-area: latest;
     }
 
     .instagram-feed-container {
-        width: 33.33%;
+        width: 25vw;
         grid-area: insta;
     }
+
+    
 }
