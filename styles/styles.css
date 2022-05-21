@@ -685,7 +685,34 @@ main {
     .main-card {
         width: 52vw;
         margin: 0;
-        margin-bottom: 3.5rem;
+        margin-bottom: 2.8rem;
+    }
+
+    .main-card-title {
+        font-size: 0.76rem;
+    }
+
+    .card-info {
+        margin-top: 1.55rem;
+        padding: 0.34rem 0;
+    }
+
+    .card-info h2 {
+        font-size: 1.45rem;
+        letter-spacing: 1.25px;
+    }
+
+    .sub-info {
+        width: 90%;
+        margin-top: 1.7rem;
+    }
+
+    .social-links {
+        width: 21%;
+    }
+
+    .read-more-btn {
+        margin-top: 1.15rem;
     }
 
     .profile-card {
@@ -707,7 +734,7 @@ main {
         margin: 6.1rem 0 0.7rem 0;
     }
 
-    .profile-info ul{
+    .profile-info ul {
         width: 13.5vw;
         position: relative;
         justify-content: space-around;
@@ -717,19 +744,32 @@ main {
     .popular-post-container {
         width: 25vw;
         grid-area: pop;
+        margin-top: 2.5rem;
+        padding: 1rem 1.7rem;
     }
-
-
 
     .latest-post-container {
         width: 25vw;
         grid-area: latest;
+        margin: 0.8rem 0;
     }
 
     .instagram-feed-container {
         width: 25vw;
         grid-area: insta;
+        margin: 2.15rem 0;
     }
 
-    
+    .instagram-feed {
+        height: 90%;
+        margin: 0;
+        padding: 1.3rem 1.4rem;
+    }
+
+    .insta-img {
+        padding: 0;
+        padding-bottom: 0.5rem;
+    }
+
+
 }
