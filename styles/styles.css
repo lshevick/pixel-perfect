@@ -48,6 +48,15 @@ a {
     color: var(--secondary-color);
 }
 
+i {
+    transition: all 0.2s ease-in-out;
+}
+
+i:hover {
+    color: var(--tertiary-color);
+    transform: scale(1.5);
+}
+
 h2 {
     font-family: Oswald, sans-serif;
 }
@@ -256,7 +265,7 @@ h2 {
 
     .search-input {
         background-color: var(--nav-color);
-        color: #fff;
+        color: #333;
         outline: none;
         border: none;
         line-height: 30px;
@@ -783,10 +792,22 @@ main {
         padding: 1rem 1.7rem;
     }
 
+    .popular-post h2:hover {
+        cursor: pointer;
+        color: var(--tertiary-color);
+        transform: scale(1.01);
+    }
+
     .latest-post-container {
         width: 25vw;
         grid-area: latest;
         margin: 0.8rem 0;
+    }
+
+    .latest-post h2:hover {
+        cursor: pointer;
+        color: var(--tertiary-color);
+        transform: scale(1.01);
     }
 
     .instagram-feed-container {
@@ -804,6 +825,12 @@ main {
     .insta-img {
         padding: 0;
         padding-bottom: 0.5rem;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .insta-img:hover {
+        cursor: pointer;
+        transform: scale(1.1);
     }
 
     .footer-container {
