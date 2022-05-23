@@ -648,14 +648,14 @@ main {
     grid-template-areas:
         'img '
         'foot';
-    width: 100vw;
+    width: 100%;
     margin: 1.5rem 0;
 }
 
 .footer-img-container {
     grid-area: img;
     display: flex;
-    width: 98%;
+    width: 100%;
 }
 
 .footer-img {
@@ -664,7 +664,7 @@ main {
 }
 
 .footer {
-    width: 98.5%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -873,14 +873,6 @@ main {
 
     .footer-container {
         margin: 0;
-    }
-
-    .footer-img-container {
-        width: 99vw;
-    }
-
-    .footer {
-        width: 99vw;
     }
 
     .mobile-hidden {
